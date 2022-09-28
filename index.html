@@ -5,63 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lista de la compra Online</title>
     <link rel="stylesheet" href="/styles/index.css" />
+    <script
+      src="https://kit.fontawesome.com/dc7bdc40cf.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
       <h1>Lista de la compra</h1>
-      <ul>
-        <li class="menu">
-          <a href="#principal">Principal</a>
-        </li>
-        <li class="menu">
-          <a href="#list">Lista</a>
-        </li>
-        <li class="menu">
-          <a href="#about">Acerca de</a>
-        </li>
-      </ul>
+      <nav>
+        <ul>
+          <li class="menu">
+            <a href="#principal">Principal</a>
+          </li>
+          <li class="menu">
+            <a class="selected" href="#list">Lista</a>
+          </li>
+          <li class="menu">
+            <a href="#about">Acerca de</a>
+          </li>
+        </ul>
+      </nav>
     </header>
+    <aside class="add-zone">
+      <button>+</button>
+      <p><span class="aggregates">2/3</span> comprados</p>
+    </aside>
     <main>
-      <section class="add-zone">
-        <button>+</button>
-        <p><span class="aggregates">2/3</span> comprados</p>
-      </section>
       <section class="shopping-list">
         <ul class="articles">
-          <li class="article">
+          <li class="product">
             <label>
-              <input type="checkbox" id="article-check-1" />
-              <span class="article-name">Pan</span>
+              <input type="checkbox" id="product-check-1" />
+              <span class="product-name bought-product">Pan</span>
             </label>
             <div class="price-remove">
-              <p class="price">0.75€ <span class="remove">X</span></p>
+              <p class="price bought-product">
+                0.75€ <span class="fa-sharp fa-solid fa-xmark"></span>
+              </p>
             </div>
           </li>
-          <li class="article">
+          <li class="product">
             <label>
-              <input type="checkbox" id="article-check-2" />
-              <span class="article-name">Azucar</span>
+              <input type="checkbox" id="product-check-2" />
+              <span class="product-name">Azucar</span>
             </label>
             <div class="price-remove">
-              <p class="price"><span class="remove">X</span></p>
+              <p class="price">
+                <span class="fa-sharp fa-solid fa-xmark"></span>
+              </p>
             </div>
           </li>
-          <li class="article">
+          <li class="product">
             <label>
-              <input type="checkbox" id="article-check-3" />
-              <span class="article-name">Leche</span>
+              <input type="checkbox" id="product-check-3" />
+              <span class="product-name bought-product">Leche</span>
             </label>
             <div class="price-remove">
-              <p class="price">1.20€ <span class="remove">X</span></p>
+              <p class="price bought-product">
+                1.20€ <span class="fa-sharp fa-solid fa-xmark"></span>
+              </p>
             </div>
           </li>
-          <li class="article">
+          <li class="product">
             <label>
-              <input type="checkbox" id="article-check-4" />
-              <span class="article-name">Tofu</span>
+              <input type="checkbox" id="product-check-4" />
+              <span class="product-name">Tofu</span>
             </label>
             <div class="price-remove">
-              <p class="price">4.35€ <span class="remove">X</span></p>
+              <p class="price">
+                4.35€ <span class="fa-sharp fa-solid fa-xmark"></span>
+              </p>
             </div>
           </li>
         </ul>

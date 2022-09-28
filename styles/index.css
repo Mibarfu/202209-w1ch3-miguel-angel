@@ -1,13 +1,18 @@
-html {
+* {
   margin: 0;
+  padding: 0;
+}
+
+html {
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial,
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 }
 
 main {
   display: flex;
-  min-width: 600px;
   flex-direction: column;
+  background-color: #ffc845;
+  height: 80vh;
 }
 
 header {
@@ -15,15 +20,16 @@ header {
   background-color: #279989;
   color: white;
   justify-content: space-between;
-  padding: 0 20px;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px;
 }
 
 header ul {
   display: flex;
-  align-items: center;
   list-style: none;
-  text-decoration: none;
   font-size: 1.3rem;
+  text-align: center;
 }
 
 header ul a {
@@ -31,9 +37,10 @@ header ul a {
   cursor: pointer;
   color: white;
   list-style: none;
+  text-decoration: none;
 }
 
-header ul a:hover {
+header ul a.selected {
   font-weight: bold;
 }
 
@@ -42,11 +49,13 @@ header ul a:hover {
   background-color: #44a080;
   justify-content: space-between;
   color: white;
-  padding: 0 20px;
+  padding: 20px 30px;
 }
+
 .add-zone p {
   font-size: 1.5rem;
 }
+
 .add-zone button {
   font-size: 2rem;
   color: #44a080;
@@ -63,6 +72,36 @@ header ul a:hover {
 
 .shopping-list {
   display: flex;
-  background-color: #ffc845;
-  font-size: 1.3rem;
+  flex-direction: column;
+  padding: 20px 30px;
+}
+
+.shopping-list ul {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid black;
+  font-size: 1.8rem;
+}
+
+.product {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bought-product {
+  text-decoration: line-through;
+}
+
+.total-price {
+  align-self: flex-end;
+  font-size: 2rem;
+}
+
+.price > span {
+  margin-left: 10px;
+}
+
+.product input[type="checkbox"] {
+  width: 27px;
+  height: 27px;
 }
