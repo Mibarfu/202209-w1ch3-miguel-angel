@@ -1,0 +1,68 @@
+html {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+main {
+  display: flex;
+  min-width: 600px;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  background-color: #279989;
+  color: white;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+header ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+header ul a {
+  margin-left: 20px;
+  cursor: pointer;
+  color: white;
+  list-style: none;
+}
+
+header ul a:hover {
+  font-weight: bold;
+}
+
+.add-zone {
+  display: flex;
+  background-color: #44a080;
+  justify-content: space-between;
+  color: white;
+  padding: 0 20px;
+}
+.add-zone p {
+  font-size: 1.5rem;
+}
+.add-zone button {
+  font-size: 2rem;
+  color: #44a080;
+  align-self: center;
+  width: 40px;
+  aspect-ratio: 1;
+  background-color: white;
+  border: none;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+.shopping-list {
+  display: flex;
+  background-color: #ffc845;
+  font-size: 1.3rem;
+}
