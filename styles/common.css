@@ -8,13 +8,6 @@ html {
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  background-color: #ffc845;
-  height: 80vh;
-}
-
 header {
   display: flex;
   background-color: #279989;
@@ -71,38 +64,10 @@ header ul a.selected {
   cursor: pointer;
 }
 
-.shopping-list {
+main {
   display: flex;
   flex-direction: column;
-  padding: 20px 30px;
-}
-
-.shopping-list ul {
-  padding-bottom: 20px;
-  margin-bottom: 20px;
-  border-bottom: 1px solid black;
-  font-size: 1.8rem;
-}
-
-.product {
-  display: flex;
-  justify-content: space-between;
-}
-
-.bought-product {
-  text-decoration: line-through;
-}
-
-.total-price {
-  align-self: flex-end;
-  font-size: 2rem;
-}
-
-.price > span {
-  margin-left: 10px;
-}
-
-.product input[type="checkbox"] {
-  width: 27px;
-  height: 27px;
+  background-color: #ffc845;
+  padding: 30px;
+  height: 80vh;
 }

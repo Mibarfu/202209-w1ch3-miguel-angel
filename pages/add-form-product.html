@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de la compra Online</title>
+    <link rel="stylesheet" href="/styles/form.css" />
+    <link rel="stylesheet" href="/styles/common.css" />
+    <script
+      src="https://kit.fontawesome.com/dc7bdc40cf.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <h1>Lista de la compra</h1>
+      <nav>
+        <ul>
+          <li class="menu">
+            <a href="#principal">Principal</a>
+          </li>
+          <li class="menu">
+            <a class="selected" href="#list">Lista</a>
+          </li>
+          <li class="menu">
+            <a href="#about">Acerca de</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <aside class="add-zone">
+      <a class="fa-solid fa-minus" href="/index.html"></a>
+      <p><span class="aggregates">2/3</span> comprados</p>
+    </aside>
+    <main>
+      <h2>Añadir artículo</h2>
+      <div>
+        <form name="form">
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" />
+          <label for="price">Precio:</label>
+          <div><input type="number" id="price" /><span> €</span></div>
+          <input type="submit" value="Añadir" />
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
