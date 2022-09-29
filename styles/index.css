@@ -56,8 +56,8 @@ header ul a.selected {
   font-size: 1.5rem;
 }
 
-.add-zone button {
-  font-size: 2rem;
+.add-zone a {
+  font-size: 1.5rem;
   color: #44a080;
   align-self: center;
   width: 40px;
@@ -67,6 +67,7 @@ header ul a.selected {
   border-radius: 50%;
   text-align: center;
   line-height: 40px;
+  text-decoration: none;
   cursor: pointer;
 }
 
